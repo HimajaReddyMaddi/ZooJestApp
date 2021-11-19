@@ -5,6 +5,8 @@
  */
 package edu.nwmissouri.zoo06group;
 
+import java.lang.invoke.StringConcatException;
+
 /**
  *Giraffe class (derived subclass of the superclass Animal)
  * 
@@ -37,7 +39,7 @@ public class Giraffe extends Animal {
      *
      * 
      */
-    public void multiply() {
+    public void multiply()  {
         double a = 1.5;
         int b = 4;
         double c = getGiraffeMultiplication(a, b);
