@@ -53,7 +53,7 @@ public class Giraffe extends Animal {
         System.out.println(a/b);
     }
    catch(ArithmeticException e){
-       System.out.println("Exception occured");
+       System.out.println("Exception occured"+e);
 }
    finally{
        System.out.println("Exception Handling");
@@ -67,7 +67,7 @@ public class Giraffe extends Animal {
             System.out.println("addition of two elements:" + add);
         }
         catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("ArrayIndexOutOfBoundsException");
+            System.out.println("ArrayIndexOutOfBoundsException"+e);
         }
         finally{
             System.out.println("Exception Handling");
@@ -82,7 +82,7 @@ public class Giraffe extends Animal {
             }
         }
         catch(StringIndexOutOfBoundsException e){
-            System.out.println("StringIndexOutOfBoundsException");
+            System.out.println("StringIndexOutOfBoundsException"+e);
         }
     }
     
