@@ -43,6 +43,47 @@ public class Giraffe extends Animal {
         double c = getGiraffeMultiplication(a, b);
         System.out.printf("I know GiraffeMultiplication! %4.2f times %d is %4.2f \n", a, b, c);
     }
+    
+    public void divide() {
+   try{
+        int a = 4;
+        int b = 0;
+        System.out.println(a/b);
+    }
+   catch(ArithmeticException e){
+       System.out.println("Exception occured");
+}
+   finally{
+       System.out.println("Exception Handling");
+   }
+    }
+    
+    public void addition() throws ArrayIndexOutOfBoundsException{
+        try{
+            int[] arr= {1,2,3};
+            int add= arr[2]+arr[3];
+            System.out.println("addition of two elements:" + add);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException");
+        }
+        finally{
+            System.out.println("Exception Handling");
+        }
+    }
+    
+    public void concat() throws StringIndexOutOfBoundsException{
+        try{
+            String name="Himaja";
+            for(int i=0;i<name.length();i++){
+                System.out.println("Char at index 6 is "+ name.charAt(6));
+            }
+        }
+        catch(StringIndexOutOfBoundsException e){
+            System.out.println("StringIndexOutOfBoundsException");
+        }
+    }
+    
 
     /**
      * Custom Giraffe function 
@@ -60,6 +101,9 @@ public class Giraffe extends Animal {
         giraffe.speak();
         giraffe.move();
         giraffe.multiply();
+        giraffe.divide();
+        giraffe.addition();
+      giraffe.concat();
     }
 
 
